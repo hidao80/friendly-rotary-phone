@@ -20,5 +20,11 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: "master"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_PHP_PSALM: false
-          VALIDATE_PHP_BUILTIN: false
+          VALIDATE_PHPSTAN: true
+          VALIDATE_PHP_PHPCS: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_HTML: true
+          VALIDATE_ENV: true
+          VALIDATE_EDITORCONFIG: true
+          VALIDATE_CSS: true
+          VALIDATE_BASH: true
